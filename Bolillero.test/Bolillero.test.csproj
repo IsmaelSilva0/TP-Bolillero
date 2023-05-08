@@ -21,4 +21,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Bolillero.core\Bolillero.core.csproj" />
+  </ItemGroup>
+
 </Project>
