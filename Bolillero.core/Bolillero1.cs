@@ -5,6 +5,8 @@ public class Bolillero1
     public List<int> Jugada { get; set; }
     public List<int> Afuera { get; set; }
     public IRandom Random { get; set; }
+    public ICloneable Cloneable {get; set;}
+    
 
     public Bolillero1 (int bolillas , IRandom random) 
     {
