@@ -5,16 +5,14 @@ public class Bolillero1
     public List<int> Jugada { get; set; }
     public List<int> Afuera { get; set; }
     public IRandom Random { get; set; }
-    public ICloneable Cloneable {get; set;}
 
-    private Bolillero (Bolillero original);
+    private Bolillero1 (Bolillero1 original)
     {
         Adentro = new List<int> (original.Adentro);
         Jugada = new List<int> (original.Jugada);
-        Afuera = new List<int> (original.Afuera);
-        IRandom = original.IRandom;
+        Random = original.Random;
     }
-    
+
 
     public Bolillero1 (int bolillas , IRandom random) 
     {
@@ -24,6 +22,8 @@ public class Bolillero1
         this.Afuera = new List<int>();
         this.Random = random;
     }
+    public Bolillero1
+    Clonar()
     public void CrearBolillas(int bollillas)
     {
         for (int i = 0; i < bollillas;i++)
