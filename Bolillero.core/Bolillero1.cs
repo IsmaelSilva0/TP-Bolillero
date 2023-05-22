@@ -9,7 +9,7 @@ public class Bolillero1
     private Bolillero1 (Bolillero1 original)
     {
         Adentro = new List<int> (original.Adentro);
-        Jugada = new List<int> (original.Jugada);
+        Afuera = new List<int> (original.Afuera);
         Random = original.Random;
     }
 
@@ -22,8 +22,7 @@ public class Bolillero1
         this.Afuera = new List<int>();
         this.Random = random;
     }
-    public Bolillero1
-    Clonar()
+    public Bolillero1 Clonar() => new Bolillero1(this);
     public void CrearBolillas(int bollillas)
     {
         for (int i = 0; i < bollillas;i++)
