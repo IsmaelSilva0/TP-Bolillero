@@ -29,7 +29,7 @@ public class Bolillero1
             Adentro.Add(i);
 
     }
-
+    
     public int SacarBolillas()
     {
         var indice = Random.SacarIndice(this.Adentro);
